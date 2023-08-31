@@ -1,0 +1,19 @@
+{
+  "name": "whatsapp-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd ../whatsapp-mern/ && npm run build && rm -rf ../whatsapp-backend/public && mkdir -p ../whatsapp-backend/public && mv ./build/* ../whatsapp-backend/public && cd ../whatsapp-backend/ && node server.js"
+  },
+  "author": "sanjay",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.4.3",
+    "pusher": "^5.1.3"
+  }
+}
